@@ -180,11 +180,10 @@ def llm_chat(user_text: str) -> str:
 # -----------------------
 
 def main():
-    st.set_page_config(page_title="Bharat Idea Bot", page_icon="🤖")
+    st.set_page_config(page_title="Bharat Idea Bot")
     init_state()
 
-    st.title("🇮🇳 Bharat Idea Bot")
-    st.caption("Nudge‑based startup companion for founders in India")
+    st.title("Bharat Idea Bot")
 
     for m in st.session_state.messages:
         with st.chat_message(m["role"]):
